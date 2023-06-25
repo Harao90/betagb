@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/advanced_styles.css">
+  <title>Golem Battle Sport Project</title>
+</head>
+<body>
+  <div class="stripes left"></div>
+  <div class="stripes right"></div>
+  <header class="container">
+    <h1>Welcome to the Golem Battle Sport Project</h1>
+    <p>Discover the exciting world of golem battles and immerse yourself in the lore of this thrilling sport.</p>
+  </header>
+
+  <main class="container">
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Welcome to the world of Golem Battle Sport, a fascinating and immersive experience where players engage in strategic battles using their custom-built golems. Set in a time when magic and technology coexist, Golem Battle Sport captivates audiences with its rich lore and intense gameplay. Players can create their unique golems using various parts, materials, and enchantments, which allows for deep customization and strategic planning. The sport has evolved through generations, with a focus on technological advancements and innovation. Join us in exploring this thrilling world, where history, strategy, and imagination collide to create an unforgettable experience.</p>
+    
+      <div class="image-slideshow">
+        <img class="mySlides" src="assets/imgs/Slide1.png" alt="Image 1">
+        <img class="mySlides" src="assets/imgs/Slide2.png" alt="Image 2">
+        <img class="mySlides" src="assets/imgs/Slide3.png" alt="Image 3">
+      </div>
+    </section>
+
+    <section id="history">
+      <h2>History</h2>
+      <p>The sport of Golem Battle has a long and storied history, dating back to the era of heroes. In an attempt to revitalize the now strictly regulated automaton industry, the kingdoms introduced Golem Battle as a popular form of entertainment. Over time, the sport has evolved to incorporate advanced technologies and innovative gameplay mechanics, capturing the imagination of both players and spectators alike.</p>
+    </section>
+
+    <section id="gameplay">
+      <h2>Gameplay</h2>
+      <p>Golem Battle Sport offers an engaging and strategic gameplay experience. Players can customize their golems with a wide array of parts, materials, and enchantments to create unique configurations and fighting styles. Battles take place in various arenas, each designed to test the players' tactical prowess and the adaptability of their golems. As players progress, they can unlock new parts and enchantments, further enhancing their golems' abilities and ensuring endless replayability.</p>
+    </section>
+
+    <section id="customization">
+      <h2>Customization</h2>
+      <p>One of the key aspects of Golem Battle Sport is the deep level of customization it offers players. With hundreds of parts, materials, and enchantments to choose from, players can create a virtually limitless number of golem configurations. By experimenting with different combinations, players can discover powerful synergies and develop unique fighting styles that suit their individual preferences and strategies. As the sport evolves, new parts and enchantments become available, providing even more opportunities for customization and innovation.</p>
+    </section>
+  </main>
+  <script>
+    let slideIndex = 0;
+
+function showSlides() {
+  const slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+showSlides();
+
+  </script>
+
+</body>
+</html>
