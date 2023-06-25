@@ -1,0 +1,102 @@
+/* Basic styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  background-image: url('../../assets/imgs/bg.png');
+}
+.image-slideshow {
+  position: relative;
+  display: inline-block;
+  border: 5px solid #1a0f05; /* Adjust the border size and color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+  overflow: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.image-slideshow img {
+  width: 100%;
+  height: auto;
+}
+
+.stripes {
+  position: fixed;
+  top: 0;
+  width: 15%; /* adjust this value to change the stripe width */
+  height: 100%;
+  background-image: url('../../assets/imgs/pattern.png');
+  background-repeat: repeat;
+  z-index: -1;
+  animation: scroll 20s linear infinite; /* adjust the duration (10s) to control the speed of scrolling */
+}
+
+.stripes.left {
+  left: 0;
+}
+
+.stripes.right {
+  right: 0;
+}
+
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+.inner_stripes {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%; /* adjust this value to change the stripe width */
+  height: 100%;
+  background-image: url('../../assets/imgs/pattern.png');
+  background-repeat: repeat-y;
+  z-index: -1;
+  
+}
+
+.inner_stripes.right {
+  left: auto;
+  right: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #b96c46;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #090503;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
